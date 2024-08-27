@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="caja">
+        <div class="encriptar">
+            <textarea
+             name="texto"
+             class="texto"
+             id="textoEntrada"
+             cols="30"
+             rows="10"
+             placeholder="Ingresa el texto aquí"
+            ></textarea>
+        </div>
+        <div class="condiciones">
+            <p>Solo letras minúsculas y sin carácteres especiales.</p>
+        </div>
+        <div class="botones">
+
+            <input type="button" class="boton_encriptar" value="encrypt" onclick="encrypt()"/>
+            <input type="button" class="boton_desencriptar" value="decrypt" onclick="decrypt()"/>
+        </div>
+  
+        <div class="encriptado">
+            <div class="mensaje_encriptado" id="mensaje_encriptado">
+            <br>
+            <br><br>
+            <textarea class="encriptado-2"
+            name="mensaje" 
+            id="textoSalida" 
+            cols="30" 
+            rows="10" 
+            class="mensaje"
+            ></textarea>  
+                 
+
+        </div>
+     </div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
